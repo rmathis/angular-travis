@@ -1,0 +1,10 @@
+language: node_js
+node_js: 10 # latest stable release
+install:
+  - npm ci
+  - npm run bootstrap
+script:
+  - npm test
+cache:
+  directories:
+    - ~/.npm
